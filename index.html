@@ -143,10 +143,10 @@
       <div class="price-old">De R$ 47,00</div>
       <div class="price-new"><sup>R$</sup>19<sup>,90</sup></div>
       <div class="price-label">pagamento único • acesso imediato</div>
-      <button class="btn-main open-checkout-btn">
+      <a href="https://pay.kiwify.com.br/yXnFCVT" class="btn-main">
         👉 QUERO MEU E-BOOK AGORA
         <span class="price-tag">Clique e garanta o preço promocional</span>
-      </button>
+      </a>
     </div>
 
     <div class="guarantee">
@@ -235,120 +235,14 @@
   <footer class="footer scroll-reveal">
     <h2>Chegou a hora de parar de sofrer e viver no corpo que você <em>merece.</em></h2>
     <p>Mais de 100 mulheres já transformaram sua relação com a comida com esse método. Agora é a sua vez.</p>
-    <button class="btn-main open-checkout-btn">
+    <a href="https://pay.kiwify.com.br/yXnFCVT" class="btn-main">
       ✨ SIM, QUERO EMAGRECER SEM CULPA
       <span class="price-tag">R$ 19,90 • Acesso imediato • Garantia de 7 dias</span>
-    </button>
+    </a>
     <p class="footer-note" style="margin-top:32px">© 2024 Emagrecimento sem Culpa. Todos os direitos reservados.<br>Este produto não substitui acompanhamento médico ou nutricional.</p>
   </footer>
 
-  <!-- CHECKOUT MODAL -->
-  <div class="modal-overlay" id="checkoutModal">
-    <div class="modal-content">
-      <button class="modal-close" id="closeModalBtn" aria-label="Fechar modal">&times;</button>
-      
-      <!-- Checkout Form -->
-      <div class="checkout-step" id="stepForm">
-        <h3>Finalizar sua Compra</h3>
-        <p class="modal-sub">Acesso instantâneo ao e-book após confirmação</p>
-        
-        <form id="checkoutForm" onsubmit="event.preventDefault();">
-          <div class="form-group">
-            <label for="clientEmail">Seu E-mail (onde receberá o e-book)</label>
-            <input type="email" id="clientEmail" placeholder="exemplo@email.com" required>
-          </div>
-          
-          <div class="payment-selector">
-            <label>Forma de Pagamento</label>
-            <div class="payment-options">
-              <button type="button" class="pay-opt-btn active" data-method="pix">
-                <span class="pay-icon">⚡</span> Pix
-              </button>
-              <button type="button" class="pay-opt-btn" data-method="card">
-                <span class="pay-icon">💳</span> Cartão de Crédito
-              </button>
-            </div>
-          </div>
-          
-          <!-- Pix Content -->
-          <div class="payment-details" id="pixDetails">
-            <p class="payment-info">A liberação do Pix é imediata!</p>
-          </div>
-          
-          <!-- Card Content -->
-          <div class="payment-details hidden" id="cardDetails">
-            <div class="form-group">
-              <label for="cardNumber">Número do Cartão</label>
-              <input type="text" id="cardNumber" placeholder="0000 0000 0000 0000">
-            </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="cardExpiry">Validade</label>
-                <input type="text" id="cardExpiry" placeholder="MM/AA">
-              </div>
-              <div class="form-group">
-                <label for="cardCvv">CVV</label>
-                <input type="text" id="cardCvv" placeholder="123">
-              </div>
-            </div>
-          </div>
-          
-          <div class="checkout-total">
-            <span>Total a pagar:</span>
-            <strong>R$ 19,90</strong>
-          </div>
-          
-          <button type="submit" class="btn-checkout" id="submitCheckoutBtn">Gerar Pix de Pagamento</button>
-        </form>
-      </div>
 
-      <!-- Processing Step -->
-      <div class="checkout-step hidden" id="stepProcessing">
-        <div class="loader-container">
-          <div class="spinner"></div>
-          <p id="processingText">Processando seu pagamento...</p>
-        </div>
-      </div>
-
-      <!-- Pix QR Step -->
-      <div class="checkout-step hidden" id="stepPixQr">
-        <h3>Pagamento via Pix</h3>
-        <p class="modal-sub">Escaneie o QR Code abaixo ou copie a chave Pix para finalizar.</p>
-        
-        <div class="qr-code-box">
-          <!-- Mock QR Code SVG -->
-          <svg class="qr-svg" viewBox="0 0 100 100" width="150" height="150">
-            <rect width="100" height="100" fill="white"/>
-            <path d="M10 10h30v30H10zm5 5h20v20H15zm10 10h10v10H25zM60 10h30v30H60zm5 5h20v20H65zm10 10h10v10H75zM10 60h30v30H10zm5 5h20v20H15zm10 10h10v10H25zM50 50h10v10H50zm10 10h10v10H60zm10-10h10v10H70zm10 10h10v10H80zm-20 20h10v10H60zm20 0h10v10H80zm-10 10h10v10H70zm10 0h10v10H80z" fill="#3D1A1E"/>
-          </svg>
-        </div>
-        
-        <div class="pix-key-box">
-          <input type="text" id="pixKeyInput" value="00020101021126580014br.gov.bcb.pix0136551bca3a-d68a-40a2-94bf-80a187a5522e520400005303986540519.905802BR5925Emagrecimento Sem Culpa6009Sao Paulo62070503***6304ABCD" readonly>
-          <button id="copyPixBtn">Copiar Código</button>
-        </div>
-        
-        <p class="status-waiting">⏰ Aguardando confirmação do pagamento...</p>
-        
-        <button class="btn-checkout" id="mockPixPaidBtn">Simular Pagamento Confirmado</button>
-      </div>
-
-      <!-- Success Step -->
-      <div class="checkout-step hidden" id="stepSuccess">
-        <div class="success-icon">🎉</div>
-        <h3>Pagamento Confirmado!</h3>
-        <p class="modal-sub">Obrigado! Seu acesso ao e-book foi enviado para o seu e-mail.</p>
-        <p class="success-email-alert">Enviado para: <strong id="successEmailDisplay">seu-email@exemplo.com</strong></p>
-        
-        <div class="download-section">
-          <p>Você também pode baixar o e-book diretamente aqui:</p>
-          <button class="btn-main" id="downloadBookBtn">
-            📥 BAIXAR E-BOOK EM PDF
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script src="script.js"></script>
 </body>
