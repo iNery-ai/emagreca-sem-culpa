@@ -863,6 +863,14 @@ body {
   font-size: 16px;
   flex-shrink: 0;
   box-shadow: 0 4px 10px rgba(232, 82, 106, 0.2);
+  overflow: hidden;
+}
+
+.testi-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .testi-name {
