@@ -389,6 +389,15 @@ body {
   align-items: center;
 }
 
+.dep-site-hero-img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto 16px;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(61, 26, 30, 0.08);
+}
+
 .hero-col-right {
   display: none;
 }
@@ -492,13 +501,13 @@ body {
 
   .hero-bullets {
     align-self: flex-start;
-    order: 4;
+    order: 5;
     margin-bottom: 30px;
   }
   
   .hero-subtitle {
     text-align: left;
-    order: 3;
+    order: 4;
   }
   
   .pre-headline {
@@ -508,15 +517,21 @@ body {
   .hero h1 {
     order: 2;
   }
+
+  .dep-site-hero-img {
+    order: 3;
+    margin: 15px 0;
+    align-self: flex-start;
+  }
   
   .hero-cta-first {
-    order: 5;
+    order: 6;
     align-self: flex-start;
     margin: 0 0 16px 0;
   }
   
   .hero-confidence {
-    order: 6;
+    order: 7;
     align-self: flex-start;
     margin: 0 0 16px 0;
     justify-content: flex-start;
@@ -524,7 +539,7 @@ body {
   }
   
   .hero-support {
-    order: 7;
+    order: 8;
     align-self: flex-start;
     margin: 0;
     justify-content: flex-start;
