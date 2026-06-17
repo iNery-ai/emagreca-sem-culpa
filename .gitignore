@@ -1,0 +1,9 @@
+# Local Backup
+backup/
+
+# Adobe Premiere Pro files
+**/Adobe Premiere Pro Audio Previews/
+**/Adobe Premiere Pro Auto-Save/
+*.prproj
+*.prin
+*.prel

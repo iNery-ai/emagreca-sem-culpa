@@ -4,17 +4,29 @@ document.addEventListener('DOMContentLoaded', () => {
   // 1. STICKY BAR VISIBILITY ON SCROLL
   // ==========================================
   const stickyBar = document.getElementById('stickyBar');
+  const mobileStickyBtn = document.getElementById('mobileStickyBtn');
   const heroSection = document.querySelector('.hero');
 
   const handleScroll = () => {
-    if (!stickyBar || !heroSection) return;
+    if (!heroSection) return;
     
-    // Show sticky bar once user scrolls past 350px or past the hero section
     const heroHeight = heroSection.offsetHeight;
-    if (window.scrollY > (heroHeight - 100)) {
-      stickyBar.classList.add('visible');
-    } else {
-      stickyBar.classList.remove('visible');
+    const shouldBeVisible = window.scrollY > (heroHeight - 100);
+    
+    if (stickyBar) {
+      if (shouldBeVisible) {
+        stickyBar.classList.add('visible');
+      } else {
+        stickyBar.classList.remove('visible');
+      }
+    }
+    
+    if (mobileStickyBtn) {
+      if (shouldBeVisible) {
+        mobileStickyBtn.classList.add('visible');
+      } else {
+        mobileStickyBtn.classList.remove('visible');
+      }
     }
   };
 
