@@ -166,7 +166,7 @@ body {
   font-size: clamp(32px, 8vw, 44px);
   font-weight: 900;
   line-height: 1.2;
-  color: var(--brown);
+  color: #cc3c56;
   margin-bottom: 20px;
 }
 
