@@ -954,6 +954,23 @@ body {
   font-weight: 500;
 }
 
+.price-note {
+  background-color: #FFFDF0; /* Amarelo sutilissimo */
+  border: 1px dashed #E2B237; /* Borda tracejada fina */
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-top: -12px; /* Pull it slightly closer to the label */
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--brown-soft);
+  text-align: left;
+}
+
+.price-note strong {
+  color: var(--brown);
+}
+
 .guarantee {
   display: flex;
   align-items: center;
