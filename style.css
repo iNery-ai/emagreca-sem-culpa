@@ -890,6 +890,68 @@ body {
   margin-top: 2px;
 }
 
+/* Rating Summary Box */
+.rating-summary-box {
+  background: white;
+  border-radius: 20px;
+  padding: 30px 24px;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(61, 26, 30, 0.04);
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+}
+
+.rating-prefix {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--gray);
+  margin-bottom: 8px;
+}
+
+.rating-score-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: 8px;
+}
+
+.rating-score-big {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--brown);
+  line-height: 1;
+}
+
+.rating-score-max {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.rating-stars-large {
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-note {
+  font-size: 11px;
+  color: var(--brown-soft);
+  line-height: 1.4;
+}
+
+.rating-note strong {
+  color: var(--rose);
+}
+
 /* OFFER */
 .offer {
   padding: 80px 24px;
@@ -933,7 +995,7 @@ body {
 
 .price-new {
   font-family: var(--font-display);
-  font-size: 56px;
+  font-size: 76px;
   font-weight: 900;
   color: var(--rose);
   line-height: 1;
@@ -941,7 +1003,7 @@ body {
 }
 
 .price-new sup {
-  font-size: 24px;
+  font-size: 32px;
   vertical-align: top;
   margin-top: 10px;
   display: inline-block;
@@ -1165,9 +1227,10 @@ body {
 }
 
 .footer-note {
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.4);
-  line-height: 1.6;
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.3);
+  line-height: 1.4;
+  letter-spacing: 0.2px;
 }
 
 

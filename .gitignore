@@ -7,3 +7,8 @@ backup/
 *.prproj
 *.prin
 *.prel
+
+# Ignore raw/temp folders not needed for the web page
+criativos/
+VSL/
+scratch/
