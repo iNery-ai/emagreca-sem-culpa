@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 850" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&amp;family=DM+Sans:wght@400;500;700&amp;display=swap');
+      .serif-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; fill: #3D1A1E; }
+      .sans-kicker { font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.2px; fill: #C93A54; text-transform: uppercase; }
+      .card-title { font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 700; fill: #3D1A1E; }
+      .card-body { font-family: 'DM Sans', sans-serif; font-size: 13px; fill: #5A353A; line-height: 1.5; }
+      .field-label { font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; fill: #3D1A1E; }
+      .footer-txt { font-family: 'DM Sans', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 1px; fill: #A08085; text-transform: uppercase; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="850" fill="#FFF8F5" rx="16"/>
+  
+  <!-- Header Card Block -->
+  <g transform="translate(30, 30)">
+    <rect width="540" height="135" fill="#FCECEF" rx="18"/>
+    <!-- Top-Left Accent Bar -->
+    <rect x="24" y="22" width="38" height="5" fill="#E8526A" rx="2.5"/>
+    <!-- Top-Right Geometric Line -->
+    <path d="M 495 18 L 515 18 L 515 38" fill="none" stroke="#E8526A" stroke-width="1.5" opacity="0.4"/>
+    
+    <text x="24" y="52" class="sans-kicker">ROTEIRO · ATIVIDADES</text>
+    <text x="24" y="98" class="serif-title" font-size="34">Dias 01 e 02</text>
+  </g>
+  
+  <!-- Card 1: Dia 01 · Observe sua rotina -->
+  <g transform="translate(30, 185)">
+    <rect width="540" height="105" fill="#FFFFFF" rx="14" stroke="#FDE8EC" stroke-width="1"/>
+    <text x="24" y="32" class="card-title">Dia 01 · Observe sua rotina</text>
+    <text x="24" y="58" class="card-body">Registre uma refeição de ontem: onde aconteceu, o que estava disponível e o</text>
+    <text x="24" y="78" class="card-body">que dificultou. Evite classificar como “boa” ou “ruim”.</text>
+  </g>
+  
+  <!-- Card 2: Dia 02 · Escolha uma mudança -->
+  <g transform="translate(30, 305)">
+    <rect width="540" height="105" fill="#FFFFFF" rx="14" stroke="#FDE8EC" stroke-width="1"/>
+    <text x="24" y="32" class="card-title">Dia 02 · Escolha uma mudança</text>
+    <text x="24" y="58" class="card-body">Escolha uma ação pequena sob seu controle, como separar ingredientes antes</text>
+    <text x="24" y="78" class="card-body">do horário de cozinhar. Não precisa mudar todas as refeições.</text>
+  </g>
+  
+  <!-- Interactive Fillable Field 1: O que percebi? -->
+  <g transform="translate(30, 425)">
+    <text x="0" y="20" class="field-label">O que percebi?</text>
+    <rect x="0" y="30" width="540" height="70" fill="#FFF4F6" rx="8" stroke="#F8D7DE" stroke-width="1"/>
+    <text x="16" y="58" class="sans-kicker" fill="#C93A54" font-size="11" opacity="0.7">CAMPO INTERATIVO PREENCHÍVEL NO PDF</text>
+  </g>
+  
+  <!-- Interactive Fillable Field 2: Minha ação possível: -->
+  <g transform="translate(30, 545)">
+    <text x="0" y="20" class="field-label">Minha ação possível:</text>
+    <rect x="0" y="30" width="540" height="70" fill="#FFF4F6" rx="8" stroke="#F8D7DE" stroke-width="1"/>
+    <text x="16" y="58" class="sans-kicker" fill="#C93A54" font-size="11" opacity="0.7">CAMPO INTERATIVO PREENCHÍVEL NO PDF</text>
+  </g>
+  
+  <!-- Didactic note card -->
+  <g transform="translate(30, 675)">
+    <rect width="540" height="70" fill="#FFFFFF" rx="10" stroke="#FDE8EC" stroke-width="1"/>
+    <text x="20" y="28" class="sans-kicker" font-size="10">ORIENTAÇÃO PEDAGÓGICA</text>
+    <text x="20" y="48" class="card-body" font-size="12">Você pode preencher digitalmente no leitor compatível ou imprimir as fichas.</text>
+  </g>
+  
+  <!-- Footer -->
+  <g transform="translate(30, 805)">
+    <text x="0" y="0" class="footer-txt">EMAGRECIMENTO SEM CULPA · COMECE PELA ROTINA</text>
+    <rect x="420" y="-14" width="54" height="20" fill="#FCECEF" rx="10"/>
+    <text x="447" y="0" class="footer-txt" fill="#C93A54" font-weight="700" text-anchor="middle">Índice</text>
+    <text x="540" y="0" class="footer-txt" fill="#C93A54" font-weight="700" text-anchor="end">18</text>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 850" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&amp;family=DM+Sans:wght@400;500;700&amp;display=swap');
+      .serif-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; }
+      .sans-text { font-family: 'DM Sans', sans-serif; }
+    </style>
+  </defs>
+  <!-- Background Page -->
+  <rect width="600" height="850" fill="#FFF8F5" rx="14"/>
+  <rect x="20" y="20" width="560" height="810" fill="#FFFFFF" rx="10" stroke="#FDE8EC" stroke-width="1.5"/>
+  
+  <!-- Top Category Pill -->
+  <rect x="50" y="55" width="360" height="34" fill="#FDE8EC" rx="17"/>
+  <text x="70" y="77" class="sans-text" font-size="11" font-weight="700" letter-spacing="1.5" fill="#E8526A">BÔNUS 01 · KIT COMECE PELA ROTINA</text>
+  
+  <!-- Central Medallion -->
+  <circle cx="300" cy="290" r="130" fill="#FDE8EC" opacity="0.6"/>
+  
+  <!-- Shopping Bag Icon with Checkmark -->
+  <g transform="translate(300, 290)">
+    <!-- Bag Handle -->
+    <path d="M -36 -40 C -36 -72 36 -72 36 -40" fill="none" stroke="#E8526A" stroke-width="5" stroke-linecap="round"/>
+    <!-- Bag Body -->
+    <rect x="-70" y="-40" width="140" height="150" rx="16" fill="#FFFFFF" stroke="#E8526A" stroke-width="5"/>
+    <!-- Checkmark Inside -->
+    <path d="M -38 25 L -12 50 L 38 -5" fill="none" stroke="#E8526A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- List Lines -->
+    <line x1="8" y1="26" x2="42" y2="26" stroke="#E8526A" stroke-width="5" stroke-linecap="round"/>
+    <line x1="-34" y1="68" x2="36" y2="68" stroke="#E8526A" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="300" y="505" class="serif-title" font-size="38" fill="#3D1A1E" text-anchor="middle">Lista de Compras Semanal</text>
+  
+  <!-- Subtitle -->
+  <text x="300" y="555" class="sans-text" font-size="17" fill="#6B3A40" text-anchor="middle">Do planejamento à feira, com menos improviso.</text>
+  
+  <!-- Bullets / Metadata -->
+  <text x="300" y="615" class="sans-text" font-size="13" font-weight="500" fill="#8A7070" text-anchor="middle">Exemplo preenchido · categorias de compras</text>
+  <text x="300" y="638" class="sans-text" font-size="13" font-weight="500" fill="#8A7070" text-anchor="middle">controle do orçamento · lista reutilizável</text>
+  
+  <!-- Button -->
+  <g transform="translate(200, 680)">
+    <rect width="200" height="48" fill="#E8526A" rx="24"/>
+    <text x="100" y="30" class="sans-text" font-size="12" font-weight="700" letter-spacing="1" fill="#FFFFFF" text-anchor="middle">ABRIR O BÔNUS →</text>
+  </g>
+  
+  <!-- Footer Brand -->
+  <text x="50" y="795" class="sans-text" font-size="11" font-weight="700" letter-spacing="1.5" fill="#8A7070">EMAGRECIMENTO SEM CULPA</text>
+</svg>

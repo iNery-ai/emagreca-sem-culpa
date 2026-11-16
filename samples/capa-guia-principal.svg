@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 850" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&amp;family=DM+Sans:wght@400;500;700&amp;display=swap');
+      .serif-title { font-family: 'Playfair Display', Georgia, serif; }
+      .sans-text { font-family: 'DM Sans', sans-serif; }
+    </style>
+  </defs>
+  <!-- Background Page -->
+  <rect width="600" height="850" fill="#FFF9F7" rx="12"/>
+  
+  <!-- Outer Vintage Frame -->
+  <rect x="24" y="24" width="552" height="802" fill="none" stroke="#F0D4DB" stroke-width="1.5" rx="8"/>
+  <rect x="30" y="30" width="540" height="790" fill="none" stroke="#E8526A" stroke-width="0.75" rx="6" opacity="0.6"/>
+  
+  <!-- Corner Floral / Geometric Accents -->
+  <!-- Top-Left -->
+  <path d="M 36 46 L 46 46 L 46 36" fill="none" stroke="#E8526A" stroke-width="1.5"/>
+  <circle cx="46" cy="46" r="2" fill="#E8526A"/>
+  <!-- Top-Right -->
+  <path d="M 564 46 L 554 46 L 554 36" fill="none" stroke="#E8526A" stroke-width="1.5"/>
+  <circle cx="554" cy="46" r="2" fill="#E8526A"/>
+  <!-- Bottom-Left -->
+  <path d="M 36 804 L 46 804 L 46 814" fill="none" stroke="#E8526A" stroke-width="1.5"/>
+  <circle cx="46" cy="804" r="2" fill="#E8526A"/>
+  <!-- Bottom-Right -->
+  <path d="M 564 804 L 554 804 L 554 814" fill="none" stroke="#E8526A" stroke-width="1.5"/>
+  <circle cx="554" cy="804" r="2" fill="#E8526A"/>
+
+  <!-- Center Circular Medallion -->
+  <circle cx="300" cy="340" r="190" fill="#E8526A"/>
+  <circle cx="300" cy="340" r="183" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.8"/>
+  
+  <!-- Stylized Female Silhouette (Minimalist & Classy) -->
+  <g transform="translate(300, 340) scale(0.95)" fill="#FFFFFF">
+    <!-- Head & Hair -->
+    <path d="M -15 -100 C -25 -95 -35 -75 -25 -50 C -40 -35 -45 -10 -40 20 C -35 50 -10 70 -5 95 C 10 70 35 50 40 20 C 45 -10 40 -35 25 -50 C 35 -75 25 -95 15 -100 C 5 -105 -5 -105 -15 -100 Z" fill="#FFFFFF" opacity="0.15"/>
+    <!-- Elegant Contoured Silhouette -->
+    <path d="M 5 -85 C 18 -85 28 -72 26 -58 C 24 -46 16 -38 18 -26 C 20 -14 32 -6 38 6 C 46 22 42 42 32 58 C 22 74 12 90 2 106 C -8 92 -20 78 -28 62 C -36 46 -38 28 -32 12 C -28 -2 -18 -10 -14 -24 C -10 -36 -18 -46 -16 -58 C -14 -72 -6 -85 5 -85 Z" fill="#FFF8F5"/>
+    <circle cx="8" cy="-55" r="16" fill="#FFF8F5"/>
+    <!-- Hair waves -->
+    <path d="M 0 -70 C -15 -60 -25 -40 -20 -20 C -18 -8 -10 0 -12 12 C -15 25 -26 35 -24 50 C -22 62 -10 72 -5 85 C 0 75 8 60 4 45 C 0 32 10 20 8 5 C 6 -10 15 -25 10 -40 C 6 -52 12 -62 0 -70 Z" fill="#FFEAEF"/>
+  </g>
+  
+  <!-- Main Title -->
+  <text x="300" y="605" class="serif-title" font-size="44" font-weight="700" letter-spacing="4" fill="#3D1A1E" text-anchor="middle">EMAGRECIMENTO</text>
+  <text x="300" y="660" class="serif-title" font-size="52" font-style="italic" fill="#E8526A" text-anchor="middle">sem culpa</text>
+  
+  <!-- Tiny divider dot -->
+  <circle cx="300" cy="685" r="2.5" fill="#D4A054"/>
+  
+  <!-- Subtitle Pill Box -->
+  <g transform="translate(60, 715)">
+    <rect width="480" height="64" fill="#FFFFFF" rx="14" stroke="#FDE8EC" stroke-width="1.5"/>
+    <text x="240" y="28" class="sans-text" font-size="11" font-weight="700" letter-spacing="2" fill="#E8526A" text-anchor="middle">COMECE PELA ROTINA</text>
+    <text x="240" y="48" class="sans-text" font-size="13" font-weight="500" fill="#6B3A40" text-anchor="middle">14 dias · 6 receitas · ferramentas para o dia a dia</text>
+  </g>
+  
+  <!-- Bottom Ornament -->
+  <g transform="translate(300, 804)" fill="#E8526A" opacity="0.7">
+    <circle cx="-12" cy="0" r="3"/>
+    <circle cx="0" cy="-3" r="4"/>
+    <circle cx="12" cy="0" r="3"/>
+    <path d="M -25 0 C -10 -4 10 -4 25 0" stroke="#E8526A" stroke-width="1" fill="none"/>
+  </g>
+</svg>

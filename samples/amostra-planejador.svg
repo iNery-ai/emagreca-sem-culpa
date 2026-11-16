@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 850" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&amp;family=DM+Sans:wght@400;500;700&amp;display=swap');
+      .serif-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; fill: #3D1A1E; }
+      .sans-kicker { font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.2px; fill: #C93A54; text-transform: uppercase; }
+      .card-title { font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 700; fill: #3D1A1E; }
+      .card-body { font-family: 'DM Sans', sans-serif; font-size: 13px; fill: #5A353A; line-height: 1.45; }
+      .day-label { font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 700; fill: #3D1A1E; }
+      .day-sub { font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 400; fill: #6B3A40; }
+      .footer-txt { font-family: 'DM Sans', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 1px; fill: #A08085; text-transform: uppercase; }
+    </style>
+  </defs>
+  <!-- Background -->
+  <rect width="600" height="850" fill="#FFF8F5" rx="16"/>
+  
+  <!-- Header Card Block -->
+  <g transform="translate(30, 30)">
+    <rect width="540" height="135" fill="#FCECEF" rx="18"/>
+    <!-- Top-Left Accent Bar -->
+    <rect x="24" y="22" width="38" height="5" fill="#E8526A" rx="2.5"/>
+    <!-- Top-Right Geometric Line -->
+    <path d="M 495 18 L 515 18 L 515 38" fill="none" stroke="#E8526A" stroke-width="1.5" opacity="0.4"/>
+    
+    <text x="24" y="52" class="sans-kicker">FERRAMENTA 02</text>
+    <text x="24" y="98" class="serif-title" font-size="34">Planejador da semana</text>
+  </g>
+  
+  <!-- Top Explanatory Card -->
+  <g transform="translate(30, 180)">
+    <rect width="540" height="80" fill="#FFFFFF" rx="14" stroke="#FDE8EC" stroke-width="1"/>
+    <text x="24" y="28" class="card-title">Planeje preparações, não regras</text>
+    <text x="24" y="52" class="card-body">Anote ideias para sua casa. Repita pratos se isso ajudar. Ajuste quantidades e</text>
+    <text x="24" y="70" class="card-body">demais refeições às suas necessidades.</text>
+  </g>
+  
+  <!-- Days Grid List (Monday through Sunday) -->
+  <g transform="translate(30, 275)">
+    <!-- Segunda -->
+    <g transform="translate(0, 0)">
+      <text x="0" y="14" class="day-label">Segunda <tspan class="day-sub">· preparação principal / o que adiantar:</tspan></text>
+      <rect x="0" y="20" width="540" height="42" fill="#FFF4F6" rx="6" stroke="#F8D7DE" stroke-width="1"/>
+    </g>
+    
+    <!-- Terça -->
+    <g transform="translate(0, 72)">
+      <text x="0" y="14" class="day-label">Terça <tspan class="day-sub">· preparação principal / o que adiantar:</tspan></text>
+      <rect x="0" y="20" width="540" height="42" fill="#FFF4F6" rx="6" stroke="#F8D7DE" stroke-width="1"/>
+    </g>
+    
+    <!-- Quarta -->
+    <g transform="translate(0, 144)">
+      <text x="0" y="14" class="day-label">Quarta <tspan class="day-sub">· preparação principal / o que adiantar:</tspan></text>
+      <rect x="0" y="20" width="540" height="42" fill="#FFF4F6" rx="6" stroke="#F8D7DE" stroke-width="1"/>
+    </g>
+    
+    <!-- Quinta -->
+    <g transform="translate(0, 216)">
+      <text x="0" y="14" class="day-label">Quinta <tspan class="day-sub">· preparação principal / o que adiantar:</tspan></text>
+      <rect x="0" y="20" width="540" height="42" fill="#FFF4F6" rx="6" stroke="#F8D7DE" stroke-width="1"/>
+    </g>
+    
+    <!-- Sexta -->
+    <g transform="translate(0, 288)">
+      <text x="0" y="14" class="day-label">Sexta <tspan class="day-sub">· preparação principal / o que adiantar:</tspan></text>
+      <rect x="0" y="20" width="540" height="42" fill="#FFF4F6" rx="6" stroke="#F8D7DE" stroke-width="1"/>
+    </g>
+    
+    <!-- Sábado -->
+    <g transform="translate(0, 360)">
+      <text x="0" y="14" class="day-label">Sábado <tspan class="day-sub">· preparação principal / o que adiantar:</tspan></text>
+      <rect x="0" y="20" width="540" height="42" fill="#FFF4F6" rx="6" stroke="#F8D7DE" stroke-width="1"/>
+    </g>
+    
+    <!-- Domingo -->
+    <g transform="translate(0, 432)">
+      <text x="0" y="14" class="day-label">Domingo <tspan class="day-sub">· preparação principal / o que adiantar:</tspan></text>
+      <rect x="0" y="20" width="540" height="42" fill="#FFF4F6" rx="6" stroke="#F8D7DE" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <!-- Footer -->
+  <g transform="translate(30, 805)">
+    <text x="0" y="0" class="footer-txt">EMAGRECIMENTO SEM CULPA · COMECE PELA ROTINA</text>
+    <rect x="420" y="-14" width="54" height="20" fill="#FCECEF" rx="10"/>
+    <text x="447" y="0" class="footer-txt" fill="#C93A54" font-weight="700" text-anchor="middle">Índice</text>
+    <text x="540" y="0" class="footer-txt" fill="#C93A54" font-weight="700" text-anchor="end">26</text>
+  </g>
+</svg>

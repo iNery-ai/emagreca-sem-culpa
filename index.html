@@ -5,26 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO tags -->
-  <title>Emagreça sem Culpa | Um guia simples e leve</title>
+  <!-- SEO Tags (sem alegações irrealistas ou fictícias) -->
+  <title>Emagreça sem Culpa — Comece pela Rotina | Kit Digital</title>
   <meta name="description"
-    content="Descubra o método simples que ajuda mulheres a cuidarem do corpo e recomeçarem de um jeito leve, sem culpa e sem dietas radicais.">
+    content="Organize compras e refeições com um roteiro de 14 dias, seis receitas e ferramentas práticas para o dia a dia. Guia digital com 2 bônus incluídos.">
   <meta name="keywords"
-    content="emagrecimento, emagrecer sem culpa, dieta feminina, reeducação alimentar, receitas saudáveis">
+    content="organização alimentar, rotina saudável, receitas práticas, lista de compras semanal, guia alimentar, emagrecimento sem culpa">
   <meta name="author" content="Emagreça sem Culpa">
 
-  <!-- OpenGraph tags -->
-  <meta property="og:title" content="Emagreça sem Culpa | Um guia simples e leve">
+  <!-- OpenGraph Tags -->
+  <meta property="og:title" content="Emagreça sem Culpa — Comece pela Rotina">
   <meta property="og:description"
-    content="Descubra o método simples que ajuda mulheres a cuidarem do corpo e recomeçarem de um jeito leve, sem culpa e sem dietas radicais.">
+    content="Organize compras e refeições com um roteiro de 14 dias, seis receitas e ferramentas para facilitar o dia a dia.">
   <meta property="og:type" content="website">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="logo/EC-logo.png">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Playfair Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,400;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
     rel="stylesheet">
 
   <!-- Style sheet -->
@@ -65,626 +67,1041 @@
 
 <body>
 
-  <!-- STICKY BAR (hidden initially, fades in on scroll) -->
-  <div class="sticky-bar" id="stickyBar">
-    <span>🔥 Oferta de lançamento</span>
-    <a href="https://pay.hotmart.com/Y106402714O?checkoutMode=10"
-      class="btn-scroll" target="_blank" rel="noopener noreferrer">Garantir por R$19,90</a>
-  </div>
+  <!-- ========================================================= -->
+  <!-- 1. CABEÇALHO (Header com marca e navegação) -->
+  <!-- ========================================================= -->
+  <header class="site-header" id="topo">
+    <div class="header-container">
+      <a href="#topo" class="brand" aria-label="Emagreça sem Culpa - Página Inicial">
+        <img src="logo/EC-logo.png" alt="Logotipo Emagreça sem Culpa" class="brand-logo" width="40" height="40">
+        <div class="brand-text">
+          <span class="brand-name">Emagreça sem Culpa</span>
+          <span class="brand-sub">Comece pela Rotina</span>
+        </div>
+      </a>
 
-  <!-- HERO -->
-  <section class="hero scroll-reveal">
-    <div class="hero-container">
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="siteNav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
 
-      <!-- Coluna Esquerda (Copy & CTAs) -->
-      <div class="hero-col-left">
+      <nav class="site-nav" id="siteNav" aria-label="Navegação principal">
+        <ul class="nav-links">
+          <li><a href="#kit" class="nav-link">O kit</a></li>
+          <li><a href="#por-dentro" class="nav-link">Por dentro</a></li>
+          <li><a href="#bonus" class="nav-link">Bônus</a></li>
+          <li><a href="#faq" class="nav-link">Dúvidas</a></li>
+        </ul>
+        <a href="#oferta" class="btn-header">Quero meu kit</a>
+      </nav>
+    </div>
+  </header>
 
-        <h1><span>Chega de dieta que castiga. Comece a emagrecer de um jeito que você vai conseguir manter</span></h1>
+  <!-- STICKY BAR FLUTUANTE (revela no scroll, sem cobrir o conteúdo) -->
+  <aside class="sticky-bar" id="stickyBar" aria-label="Oferta rápida">
+    <div class="sticky-bar-content">
+      <span class="sticky-bar-tag js-promo-active-only">⏱️ Condição especial</span>
+      <span class="sticky-bar-text js-sticky-title">Kit Digital Completo • <strong class="js-current-price">R$ 19,90</strong></span>
+      <a href="https://pay.hotmart.com/Y106402714O?checkoutMode=10"
+        class="btn-sticky js-checkout-link" target="_blank" rel="noopener noreferrer">
+        <span class="js-cta-short">Garantir meu kit</span>
+      </a>
+    </div>
+  </aside>
 
-        <img src="dep-site-hero.png" alt="Depoimento de quem emagreceu sem culpa" class="dep-site-hero-img"
-          decoding="async" fetchpriority="high">
+  <main>
 
-        <p class="hero-subtitle">Um método real para ajudar você a organizar sua alimentação e começar a emagrecer com
-          mais leveza.</p>
+    <!-- ========================================================= -->
+    <!-- 2. PRIMEIRA TELA (Hero) -->
+    <!-- ========================================================= -->
+    <section class="hero" id="hero">
+      <div class="hero-container">
 
-        <!-- Botão principal (Primeiro CTA) -->
-        <a href="https://pay.hotmart.com/Y106402714O?checkoutMode=10"
-          class="btn-main hero-cta-first" target="_blank" rel="noopener noreferrer">
-          QUERO MEU MÉTODO POR R$19,90
-        </a>
+        <div class="hero-badge-row">
+          <span class="badge-pill">Kit Digital Prático</span>
+          <span class="badge-accent js-promo-badge">Oferta de Lançamento</span>
+        </div>
 
-        <!-- Linha de confiança -->
-        <p class="secure-note hero-confidence">
-          🔥 Oferta de lançamento &nbsp;•&nbsp; 🔒 Pagamento seguro &nbsp;•&nbsp; ⚡ Acesso imediato &nbsp;•&nbsp; 🛡️
-          Garantia de 7 dias
+        <h1 class="hero-title">
+          Sua alimentação não precisa depender da próxima segunda-feira.
+        </h1>
+
+        <p class="hero-description">
+          Organize compras e refeições com um roteiro de 14 dias, seis receitas e ferramentas para facilitar o dia a dia.
         </p>
 
-      </div>
-
-      <!-- Coluna Direita (Mockup em destaque no Desktop) -->
-      <div class="hero-col-right">
-        <div class="book-viewport-hero">
-          <div class="book-container-hero">
-            <div class="book-hero">
-              <div class="book-side-hero front-hero">
-                <img src="logo/capa-ebook.png" alt="Capa do Método Emagreça Sem Culpa" class="ebook-cover-img"
-                  decoding="async">
-              </div>
-              <div class="book-side-hero spine-hero">
-                <div class="spine-text-hero">Emagreça sem Culpa</div>
-              </div>
-              <div class="book-side-hero right-page-hero"></div>
+        <!-- Imagem do Kit Mockup logo após o subtítulo -->
+        <div class="hero-media-wrapper">
+          <div class="kit-mockup-wrapper">
+            <div class="kit-mockup-badge">Kit Digital Completo</div>
+            
+            <div class="hero-kit-box">
+              <img src="samples/hero-box-kit.jpg" alt="Kit Digital Emagreça sem Culpa — Comece pela Rotina, composto pelo Guia, Roteiro de 14 Dias, Caderno de Atividades e dois Bônus" class="hero-box-img" width="819" height="1024" decoding="async" fetchpriority="high">
             </div>
-          </div>
-        </div>
-      </div>
 
-    </div>
-  </section>
-
-  <!-- PAIN -->
-  <section class="pain scroll-reveal">
-    <p class="section-label">Isso é com você?</p>
-    <h2>Você se identifica com alguma dessas situações?</h2>
-    <ul class="pain-list">
-      <li>Já fez low carb, jejum, shake, detox… e voltou a engordar tudo?</li>
-      <li>Sente culpa toda vez que come algo "proibido"?</li>
-      <li>Cansa de começar na segunda e desistir na quarta?</li>
-      <li>Sente que perdeu o controle da alimentação e quer recomeçar de um jeito mais leve?</li>
-    </ul>
-    <div class="pain-affirm">
-      Se você respondeu sim para qualquer uma dessas perguntas, saiba que <strong>você não está sozinha.</strong> E mais
-      importante: <strong>você não tem culpa nenhuma.</strong> O problema nunca foi você, foi a abordagem errada.
-    </div>
-  </section>
-
-  <!-- PARA QUEM É -->
-  <section class="for-who scroll-reveal">
-    <p class="section-label">Isso é para você?</p>
-    <h2>O Método foi criado para <span>mulheres que...</span></h2>
-    <div class="for-who-grid">
-      <div class="for-who-item">
-        <div class="for-who-icon">👩</div>
-        <p>Têm mais de 30 anos e sentem que o corpo mudou</p>
-      </div>
-      <div class="for-who-item">
-        <div class="for-who-icon">🔄</div>
-        <p>Já tentaram várias dietas e sempre desistiram no meio</p>
-      </div>
-      <div class="for-who-item">
-        <div class="for-who-icon">⏰</div>
-        <p>Têm rotina corrida e precisam de algo prático e simples</p>
-      </div>
-      <div class="for-who-item">
-        <div class="for-who-icon">💚</div>
-        <p>Querem parar de sentir culpa a cada refeição e recomeçar com leveza</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRODUCT -->
-  <section class="product scroll-reveal">
-    <p class="section-label" style="color:var(--rose)">A solução</p>
-    <h2>O que você vai encontrar <span>no método</span></h2>
-    <p class="sub">O método que vai te ajudar a melhorar sua relação com a comida e com o seu corpo.</p>
-
-    <div class="ebook-card">
-      <div class="ebook-cover-wrapper">
-        <!-- 3D CSS Book Mockup -->
-        <div class="book-viewport">
-          <div class="book-container">
-            <div class="book">
-              <div class="book-side front">
-                <img src="logo/capa-ebook.png" alt="Capa do Método EMAGRECIMENTO SEM CULPA" class="ebook-cover-img"
-                  loading="lazy" decoding="async">
-              </div>
-              <div class="book-side spine">
-                <div class="spine-text">EMAGRECIMENTO SEM CULPA</div>
-              </div>
-              <div class="book-side right-page"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="checkmarks">
-        <div class="check-item">
-          <div class="check-icon">✓</div>Por que as dietas tradicionais não funcionam (e o que fazer de diferente)
-        </div>
-        <div class="check-item">
-          <div class="check-icon">✓</div>Os mitos sobre alimentos "saudáveis" que só atrapalham o seu progresso
-        </div>
-        <div class="check-item">
-          <div class="check-icon">✓</div>Como montar suas refeições de forma simples e prática na correria do dia a dia
-        </div>
-        <div class="check-item">
-          <div class="check-icon">✓</div>Como o corpo feminino funciona e de que forma isso afeta a sua alimentação
-        </div>
-        <div class="check-item">
-          <div class="check-icon">✓</div>6 receitas fáceis e gostosas para fazer no dia a dia
-        </div>
-        <div class="check-item">
-          <div class="check-icon">✓</div>Um guia passo a passo para você começar hoje mesmo
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- BÔNUS -->
-  <section class="bonus scroll-reveal">
-    <p class="section-label" style="color:var(--rose)">Bônus exclusivos</p>
-    <h2>E tem mais: <span>bônus para acelerar seus resultados</span></h2>
-    <p class="sub">Ao comprar o método, você terá a oportunidade de adicionar estes materiais extras por apenas alguns centavos a mais.</p>
-    <div class="bonus-grid">
-      <div class="bonus-card">
-        <div class="bonus-badge">BÔNUS 1</div>
-        <div class="bonus-emoji">🛒</div>
-        <h3>Lista de Compras Semanal Fit</h3>
-        <p>Saiba exatamente o que comprar no mercado para montar refeições saudáveis a semana toda, sem gastar mais por isso.</p>
-      </div>
-      <div class="bonus-card">
-        <div class="bonus-badge">BÔNUS 2</div>
-        <div class="bonus-emoji">🔄</div>
-        <h3>Guia de Substituições Inteligentes</h3>
-        <p>Descubra trocas simples e inteligentes para continuar comendo o que gosta, de forma mais saudável e sem sofrimento.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="testimonials scroll-reveal">
-    <p class="section-label">Relatos de quem já acessou</p>
-    <h2>O que algumas mulheres disseram <span>sobre o método:</span></h2>
-
-    <div class="testi-card">
-      <p class="testi-text">Em poucos dias já percebi diferença na forma como eu me sentia. Não é uma dieta impossível — é algo que realmente dá para seguir no dia a dia sem sofrer.</p>
-      <div class="testi-author">
-        <div class="testi-avatar">
-          <img src="logo/depoimento-mariana.png" alt="Mariana S." loading="lazy" decoding="async">
-        </div>
-        <div>
-          <div class="testi-name">Mariana S.</div>
-          <div class="testi-info">42 anos, São Paulo</div>
-          <div class="stars">
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="testi-card">
-      <p class="testi-text">Me ajudou a organizar melhor minha alimentação sem aquela sensação de culpa o tempo todo. Finalmente consigo manter uma rotina sem desistir na primeira semana.</p>
-      <div class="testi-author">
-        <div class="testi-avatar">
-          <img src="logo/depoimento-fernanda.png" alt="Fernanda R." loading="lazy" decoding="async">
-        </div>
-        <div>
-          <div class="testi-name">Fernanda R.</div>
-          <div class="testi-info">48 anos, Belo Horizonte</div>
-          <div class="stars">
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="#e2e2e2" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="testi-card">
-      <p class="testi-text">Eu precisava de algo mais leve, sem promessa milagrosa. Com as orientações do método, finalmente consegui manter uma rotina alimentar por mais tempo do que qualquer dieta que já fiz.</p>
-      <div class="testi-author">
-        <div class="testi-avatar">
-          <img src="logo/depoimento-claudia.png" alt="Claudia M." loading="lazy" decoding="async">
-        </div>
-        <div>
-          <div class="testi-name">Claudia M.</div>
-          <div class="testi-info">55 anos, Recife</div>
-          <div class="stars">
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="testi-card">
-      <p class="testi-text">Finalmente um material que fala a verdade! Sem ingredientes caros, sem metas impossíveis. Consegui encaixar tudo na minha rotina e não parei mais.</p>
-      <div class="testi-author">
-        <div class="testi-avatar">
-          <img src="logo/depoimento-patricia.png" alt="Patricia T." loading="lazy" decoding="async">
-        </div>
-        <div>
-          <div class="testi-name">Patricia T.</div>
-          <div class="testi-info">39 anos, Curitiba</div>
-          <div class="stars">
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <defs>
-                <linearGradient id="halfGradPat" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="50%" stop-color="var(--gold)" />
-                  <stop offset="50%" stop-color="#e2e2e2" />
-                </linearGradient>
-              </defs>
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z"
-                fill="url(#halfGradPat)" />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="testi-card">
-      <p class="testi-text">As receitas são muito fáceis e rápidas — perfeito pra quem tem rotina corrida. Voltei a comer bem e me sentir leve, sem aquele peso na consciência.</p>
-      <div class="testi-author">
-        <div class="testi-avatar">
-          <img src="logo/depoimento-renata.png" alt="Renata G." loading="lazy" decoding="async">
-        </div>
-        <div>
-          <div class="testi-name">Renata G.</div>
-          <div class="testi-info">34 anos, Rio de Janeiro</div>
-          <div class="stars">
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-            <svg class="star-icon" viewBox="0 0 24 24" fill="var(--gold)" width="14" height="14"
-              style="display: inline-block; vertical-align: middle;">
-              <path
-                d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- QUADRO DE AVALIAÇÃO GERAL -->
-    <div class="rating-summary-box">
-      <p class="rating-prefix">Avaliação geral do método</p>
-      <div class="rating-score-row">
-        <span class="rating-score-big">4.7</span>
-      </div>
-      <div class="rating-stars-large">
-        <svg class="star-icon-large" viewBox="0 0 24 24" fill="var(--gold)" width="22" height="22"
-          style="display: inline-block; margin: 0 2px;">
-          <path
-            d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-        </svg>
-        <svg class="star-icon-large" viewBox="0 0 24 24" fill="var(--gold)" width="22" height="22"
-          style="display: inline-block; margin: 0 2px;">
-          <path
-            d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-        </svg>
-        <svg class="star-icon-large" viewBox="0 0 24 24" fill="var(--gold)" width="22" height="22"
-          style="display: inline-block; margin: 0 2px;">
-          <path
-            d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-        </svg>
-        <svg class="star-icon-large" viewBox="0 0 24 24" fill="var(--gold)" width="22" height="22"
-          style="display: inline-block; margin: 0 2px;">
-          <path
-            d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z" />
-        </svg>
-        <svg class="star-icon-large" viewBox="0 0 24 24" width="22" height="22"
-          style="display: inline-block; margin: 0 2px;">
-          <defs>
-            <linearGradient id="ratingGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="70%" stop-color="var(--gold)" />
-              <stop offset="70%" stop-color="#e2e2e2" />
-            </linearGradient>
-          </defs>
-          <path
-            d="M12 .587l3.668 7.431 8.2 1.191-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.877 1.4-8.168L.132 9.209l8.2-1.191L12 .587z"
-            fill="url(#ratingGrad)" />
-        </svg>
-      </div>
-      <p class="rating-note">Produto avaliado em <strong>4.7</strong> com base no feedback e notas de compradoras
-        reais.</p>
-    </div>
-  </section>
-
-  <!-- QUEM CRIOU -->
-  <section class="authority scroll-reveal">
-    <p class="section-label">Sobre a criadora</p>
-    <h2>Feito por quem <span>entende você</span></h2>
-    <div class="authority-card">
-      <div class="authority-header">
-        <div class="authority-avatar">
-          <img src="logo/criadora.jpg" alt="Camila Silveira - Criadora do Método Emagreça sem Culpa" class="authority-avatar-img" width="110" height="110" loading="lazy" decoding="async">
-        </div>
-        <div class="authority-title-box">
-          <h3 class="authority-name">Camila Silveira</h3>
-          <span class="authority-role">Criadora do Método Emagreça sem Culpa</span>
-        </div>
-      </div>
-      <div class="authority-text">
-        <p>Olá! Se você sente que vive em uma batalha diária contra a balança e a culpa a cada refeição, saiba que <strong>eu já estive exatamente no seu lugar</strong>.</p>
-        <p>Por quase uma década, tentei de tudo: dietas da moda, jejuns radicais, shakes e restrições extremas. Eu perdia alguns quilos no sofrimento e recuperava o dobro logo em seguida — sempre com a sensação de cansaço e frustração.</p>
-        <p>Tudo mudou quando entendi que <strong>o corpo feminino precisa de organização, carinho e clareza, nunca de castigo</strong>. Reuni alimentos simples, combinações inteligentes e uma rotina prática que cabe na correria do dia a dia.</p>
-        <p>Desenvolvi o método <strong>Emagreça sem Culpa</strong> para ser o guia acolhedor que eu gostaria de ter tido anos atrás: sem ingredientes caros, sem receitas mirabolantes e com a certeza de que é possível comer bem e voltar a se amar no espelho.</p>
-        <p class="authority-highlight">💡 "Eu não criei mais uma dieta impossível. Eu criei o caminho simples e leve que transformou a minha relação com o corpo — e agora vai transformar a sua."</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- OFFER -->
-  <section class="offer scroll-reveal" id="comprar">
-    <p class="section-label" style="color:var(--rose)">Oferta especial</p>
-    <h2>Método EMAGRECIMENTO SEM CULPA</h2>
-    <p class="sub">Um guia digital para mulheres que querem emagrecer com mais leveza, sem dieta radical e sem viver
-      presas à culpa.</p>
-
-    <div class="price-box">
-      <ul class="trust-list">
-        <li>⚡ Acesso imediato</li>
-        <li>📘 Produto digital (e-book)</li>
-        <li>🛡️ Garantia incondicional de 7 dias</li>
-        <li>🔒 Pagamento 100% seguro via Hotmart</li>
-        <li>💰 Valor único — sem mensalidade</li>
-      </ul>
-      <div class="price-old">De R$ 47,00</div>
-      <div class="price-new"><sup>R$</sup>19<sup>,90</sup></div>
-      <div class="price-label">pagamento único</div>
-      <a href="https://pay.hotmart.com/Y106402714O?checkoutMode=10"
-        class="btn-main" target="_blank" rel="noopener noreferrer">QUERO MEU MÉTODO POR R$19,90</a>
-      <p class="secure-note">
-        🔒 Pagamento seguro &nbsp;•&nbsp; ⚡ Acesso imediato após a compra &nbsp;•&nbsp; 🛡️ Garantia de 7 dias
-        &nbsp;•&nbsp; 📦 Produto 100% digital
-      </p>
-    </div>
-
-    <div class="guarantee">
-      <div class="guarantee-icon">🛡️</div>
-      <div class="guarantee-text">
-        <strong>Compra sem risco:</strong> caso o conteúdo não faça sentido para você, solicite o reembolso em até 7
-        dias.
-      </div>
-    </div>
-  </section>
-
-  <!-- COMO FUNCIONA -->
-  <section class="how-it-works scroll-reveal">
-    <p class="section-label">Simples e rápido</p>
-    <h2>Como funciona?</h2>
-    <div class="steps-grid">
-      <div class="step-item">
-        <div class="step-number">1</div>
-        <div class="step-icon">🛒</div>
-        <h3>Faça sua compra segura</h3>
-        <p>Pagamento processado pela Hotmart com total segurança. Cartão, Pix ou boleto.</p>
-      </div>
-      <div class="step-item">
-        <div class="step-number">2</div>
-        <div class="step-icon">📧</div>
-        <h3>Receba no seu e-mail</h3>
-        <p>O acesso é liberado imediatamente após a confirmação do pagamento.</p>
-      </div>
-      <div class="step-item">
-        <div class="step-number">3</div>
-        <div class="step-icon">🚀</div>
-        <h3>Comece hoje mesmo</h3>
-        <p>Abra o método, siga o passo a passo e veja a transformação acontecer.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- URGENCY -->
-  <section class="urgency scroll-reveal">
-    <h3>⚠️ Oferta por tempo limitado</h3>
-    <p>O preço promocional de R$19,90 é exclusivo para esta fase de lançamento. Depois, o valor volta para R$47,00.</p>
-    <div class="countdown-container" id="countdown">
-      <div class="countdown-item">
-        <span class="countdown-number" id="countdown-hours">00</span>
-        <span class="countdown-label">horas</span>
-      </div>
-      <div class="countdown-item">
-        <span class="countdown-number" id="countdown-minutes">00</span>
-        <span class="countdown-label">minutos</span>
-      </div>
-      <div class="countdown-item">
-        <span class="countdown-number" id="countdown-seconds">00</span>
-        <span class="countdown-label">segundos</span>
-      </div>
-    </div>
-    <a href="https://pay.hotmart.com/Y106402714O?checkoutMode=10"
-      class="btn-white" target="_blank" rel="noopener noreferrer">GARANTIR MEU MÉTODO POR R$19,90</a>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq scroll-reveal">
-    <h2>Dúvidas frequentes</h2>
-
-    <div class="faq-container">
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          <span>Preciso ter experiência com alimentação saudável?</span>
-          <span class="faq-toggle-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-content">
-            <p>Não. O método foi criado para mulheres comuns, com rotina corrida, sem conhecimento prévio de nutrição.
+            <p class="kit-disclaimer">
+              *Materiais didáticos em formato digital PDF para uso no celular, computador ou impressão.
             </p>
           </div>
         </div>
+
+        <!-- Destaques -->
+        <ul class="hero-highlights" aria-label="Destaques do produto">
+          <li>
+            <span class="highlight-icon">📘</span>
+            <span><strong>Guia digital + atividades</strong> estruturadas</span>
+          </li>
+          <li>
+            <span class="highlight-icon">🎁</span>
+            <span><strong>Dois bônus incluídos</strong> no material</span>
+          </li>
+          <li>
+            <span class="highlight-icon">✏️</span>
+            <span>Para <strong>consultar, preencher e imprimir</strong></span>
+          </li>
+        </ul>
+
+        <!-- Ação Principal -->
+        <div class="hero-action-box">
+          <a href="https://pay.hotmart.com/Y106402714O?checkoutMode=10"
+            class="btn-primary hero-btn js-checkout-link" target="_blank" rel="noopener noreferrer">
+            <span class="js-hero-cta">QUERO MEU KIT POR R$19,90</span>
+          </a>
+
+          <p class="support-info">
+            Pagamento único • Acesso após confirmação do pagamento • Garantia de 7 dias
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 3. IDENTIFICAÇÃO (Pain/Empatia) -->
+    <!-- ========================================================= -->
+    <section class="section identification-section" id="identificacao">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-kicker">O desafio diário</span>
+          <h2 class="section-title">Você quer comer melhor. Mas a rotina aperta.</h2>
+          <p class="section-lead">
+            Quando chega a hora de comer, falta tempo, faltam ingredientes e sobra dúvida sobre o que preparar.
+          </p>
+        </header>
+
+        <div class="cards-grid-three">
+          
+          <article class="info-card">
+            <span class="info-card-badge">Cenário 01</span>
+            <div class="info-card-icon" aria-hidden="true">🛒</div>
+            <h3 class="info-card-title">“Não sei o que comprar.”</h3>
+            <p class="info-card-scenario">
+              Você vai ao mercado sem um plano claro, compra itens soltos que acabam esquecidos no fundo da geladeira e continua sem saber o que preparar no dia a dia.
+            </p>
+            <div class="info-card-solution">
+              <span class="solution-label">A proposta do kit:</span>
+              <p>Planeje a partir do que já tem e escolha poucas preparações para começar.</p>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <span class="info-card-badge">Cenário 02</span>
+            <div class="info-card-icon" aria-hidden="true">⏰</div>
+            <h3 class="info-card-title">“Não tenho tempo.”</h3>
+            <p class="info-card-scenario">
+              Depois de um dia cansativo de trabalho e compromissos, a energia para cozinhar acaba e qualquer receita trabalhosa parece impossível de encaixar na rotina.
+            </p>
+            <div class="info-card-solution">
+              <span class="solution-label">A proposta do kit:</span>
+              <p>Monte alternativas simples para os dias em que o planejamento mudar.</p>
+            </div>
+          </article>
+
+          <article class="info-card">
+            <span class="info-card-badge">Cenário 03</span>
+            <div class="info-card-icon" aria-hidden="true">🌱</div>
+            <h3 class="info-card-title">“Começo e não continuo.”</h3>
+            <p class="info-card-scenario">
+              Tentar mudar a alimentação inteira de uma só vez gera sobrecarga rápida, levando a desistências frequentes logo nos primeiros dias.
+            </p>
+            <div class="info-card-solution">
+              <span class="solution-label">A proposta do kit:</span>
+              <p>Experimente uma tarefa por vez e ajuste o que não funcionar para você.</p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 4. COMO FUNCIONA (Organização Didática em 4 Etapas) -->
+    <!-- ========================================================= -->
+    <section class="section method-section" id="como-funciona">
+      <div class="container">
+
+        <header class="section-header">
+          <span class="section-kicker">Estrutura do material</span>
+          <h2 class="section-title">Como o método funciona na prática</h2>
+          <p class="section-lead">
+            Uma abordagem didática em quatro etapas contínuas para você construir previsibilidade na sua rotina:
+          </p>
+        </header>
+
+        <div class="steps-grid-four">
+          
+          <div class="step-card">
+            <div class="step-card-top">
+              <span class="step-index">01</span>
+              <span class="step-badge">Dias 01 a 03</span>
+            </div>
+            <h3 class="step-title">Observe</h3>
+            <p class="step-text">
+              Perceba sua rotina e escolha uma mudança possível.
+            </p>
+            <span class="step-micro-focus">Mapeie seus hábitos atuais sem culpa ou autocrítica.</span>
+          </div>
+
+          <div class="step-card">
+            <div class="step-card-top">
+              <span class="step-index">02</span>
+              <span class="step-badge">Dias 04 a 06</span>
+            </div>
+            <h3 class="step-title">Organize</h3>
+            <p class="step-text">
+              Planeje combinações, compras e prioridades.
+            </p>
+            <span class="step-micro-focus">Estruture cardápios viáveis e lista de feira essencial.</span>
+          </div>
+
+          <div class="step-card">
+            <div class="step-card-top">
+              <span class="step-index">03</span>
+              <span class="step-badge">Dias 07 a 10</span>
+            </div>
+            <h3 class="step-title">Prepare</h3>
+            <p class="step-text">
+              Experimente receitas e crie seu plano B.
+            </p>
+            <span class="step-micro-focus">Cozinhe em panela única e tenha saídas rápidas.</span>
+          </div>
+
+          <div class="step-card">
+            <div class="step-card-top">
+              <span class="step-index">04</span>
+              <span class="step-badge">Dias 11 a 14</span>
+            </div>
+            <h3 class="step-title">Continue</h3>
+            <p class="step-text">
+              Revise a experiência e planeje a próxima semana.
+            </p>
+            <span class="step-micro-focus">Avalie o que funcionou e mantenha o ritmo com leveza.</span>
+          </div>
+
+        </div>
+
+        <div class="notice-box">
+          <p>
+            <strong>Esclarecimento didático:</strong> Esta é a organização pedagógica dos conteúdos apresentados no material, elaborada para facilitar o estudo e a aplicação individual na rotina doméstica. O programa não constitui protocolo clínico validado e não substitui avaliação ou orientação de profissionais de saúde.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 5. VEJA POR DENTRO (Amostras Reais dos PDFs com Zoom) -->
+    <!-- ========================================================= -->
+    <section class="section preview-section" id="por-dentro">
+      <div class="container">
+
+        <header class="section-header">
+          <span class="section-kicker">Transparência Total</span>
+          <h2 class="section-title">Menos dúvida. Mais ferramentas para usar.</h2>
+          <p class="section-lead">
+            Veja exatamente como o material foi diagramado para facilitar o seu dia a dia. Páginas reais extraídas do kit digital que você recebe:
+          </p>
+
+          <!-- Barra de Recursos das Páginas -->
+          <div class="preview-features-bar">
+            <span class="feature-chip"><span class="chip-icon">🔍</span> Clique em qualquer página para folhear e ler</span>
+            <span class="feature-chip"><span class="chip-icon">✍️</span> Preenchimento direto no PDF (celular ou PC)</span>
+            <span class="feature-chip"><span class="chip-icon">🖨️</span> Diagramação limpa pronta para impressão</span>
+          </div>
+        </header>
+
+        <div class="preview-grid">
+
+          <!-- Amostra 1: Receita Real -->
+          <article class="preview-card">
+            <div class="preview-media-container js-open-modal" data-sample="receita" role="button" tabindex="0" aria-label="Abrir e ampliar amostra da Receita 01 em tela cheia">
+              <span class="preview-media-badge">Amostra Real</span>
+              <img src="samples/amostra-receita.svg" alt="Página 11 do Guia: Receita 01 — Frango com legumes na panela" class="preview-img" width="360" height="510" loading="lazy">
+              <div class="preview-zoom-overlay">
+                <span class="btn-zoom-pill"><span class="zoom-icon">🔍</span> Toque para ampliar</span>
+              </div>
+            </div>
+            <div class="preview-card-body">
+              <div class="preview-card-meta">
+                <span class="preview-card-tag">🍳 Página 11 do Guia</span>
+                <span class="preview-badge-status">Receita Real</span>
+              </div>
+              <h3 class="preview-card-title">Receita 01 — Frango com legumes na panela</h3>
+              
+              <!-- Pílulas da Receita -->
+              <ul class="preview-specs-list" aria-label="Características da receita">
+                <li>⏱️ <strong>~30 min</strong> de preparo</li>
+                <li>👥 <strong>2 porções</strong> realistas</li>
+                <li>🔄 <strong>Opções de trocas</strong> de ingredientes</li>
+              </ul>
+
+              <p class="preview-card-text">
+                Ingredientes comuns da despensa, passo a passo em panela única e orientações reais de segurança alimentar para evitar desperdício e cozimento desigual.
+              </p>
+
+              <button type="button" class="btn-card-expand js-open-modal" data-sample="receita" aria-label="Ampliar receita em tela cheia">
+                Folhear receita em tela cheia <span class="arrow-icon">↗</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Amostra 2: Roteiro Real -->
+          <article class="preview-card">
+            <div class="preview-media-container js-open-modal" data-sample="roteiro" role="button" tabindex="0" aria-label="Abrir e ampliar amostra do Roteiro Dias 01 e 02 em tela cheia">
+              <span class="preview-media-badge">Amostra Real</span>
+              <img src="samples/amostra-roteiro.svg" alt="Página 18 do Guia: Roteiro Dias 01 e 02 com campos preenchíveis" class="preview-img" width="360" height="510" loading="lazy">
+              <div class="preview-zoom-overlay">
+                <span class="btn-zoom-pill"><span class="zoom-icon">🔍</span> Toque para ampliar</span>
+              </div>
+            </div>
+            <div class="preview-card-body">
+              <div class="preview-card-meta">
+                <span class="preview-card-tag">📅 Página 18 do Guia</span>
+                <span class="preview-badge-status">Roteiro Guiado</span>
+              </div>
+              <h3 class="preview-card-title">Roteiro — Dias 01 e 02 (com campos preenchíveis)</h3>
+              
+              <!-- Pílulas do Roteiro -->
+              <ul class="preview-specs-list" aria-label="Características do roteiro">
+                <li>🎯 <strong>1 tarefa simples</strong> por dia</li>
+                <li>✍️ <strong>Campos editáveis</strong> no PDF</li>
+                <li>💡 <strong>Sem metas irreais</strong></li>
+              </ul>
+
+              <p class="preview-card-text">
+                Atividades de observação de rotina e escolha de mudança possível. Digite suas anotações diretamente no arquivo ou imprima a ficha para o seu caderno.
+              </p>
+
+              <button type="button" class="btn-card-expand js-open-modal" data-sample="roteiro" aria-label="Ampliar roteiro em tela cheia">
+                Folhear roteiro em tela cheia <span class="arrow-icon">↗</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Amostra 3: Planejador Semanal Real -->
+          <article class="preview-card">
+            <div class="preview-media-container js-open-modal" data-sample="planejador" role="button" tabindex="0" aria-label="Abrir e ampliar amostra do Planejador Semanal em tela cheia">
+              <span class="preview-media-badge">Amostra Real</span>
+              <img src="samples/amostra-planejador.svg" alt="Página 26 do Guia: Ferramenta 02 — Planejador da semana" class="preview-img" width="360" height="510" loading="lazy">
+              <div class="preview-zoom-overlay">
+                <span class="btn-zoom-pill"><span class="zoom-icon">🔍</span> Toque para ampliar</span>
+              </div>
+            </div>
+            <div class="preview-card-body">
+              <div class="preview-card-meta">
+                <span class="preview-card-tag">📊 Página 26 do Guia</span>
+                <span class="preview-badge-status">Ferramenta 02</span>
+              </div>
+              <h3 class="preview-card-title">Ferramenta 02 — Planejador da semana</h3>
+              
+              <!-- Pílulas do Planejador -->
+              <ul class="preview-specs-list" aria-label="Características do planejador">
+                <li>🗓️ <strong>Segunda a Domingo</strong> em 1 folha</li>
+                <li>🛡️ <strong>Coluna de Plano B</strong> para imprevistos</li>
+                <li>🖨️ <strong>Perfeito para a geladeira</strong></li>
+              </ul>
+
+              <p class="preview-card-text">
+                A ferramenta mais prática do kit: defina 3 preparações para a semana, anote o que adiantar antes e crie planos alternativos para os dias em que a rotina mudar.
+              </p>
+
+              <button type="button" class="btn-card-expand js-open-modal" data-sample="planejador" aria-label="Ampliar planejador em tela cheia">
+                Folhear planejador em tela cheia <span class="arrow-icon">↗</span>
+              </button>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Banner de Usabilidade Prática no Rodapé do Bloco -->
+        <div class="preview-support-banner">
+          <div class="support-banner-col">
+            <span class="banner-col-icon">📱</span>
+            <div>
+              <strong>No seu celular ou tablet:</strong>
+              <p>Abra em qualquer aplicativo gratuito de PDF (Adobe, navegador ou leitor nativo) e preencha direto na tela.</p>
+            </div>
+          </div>
+          <div class="support-banner-col">
+            <span class="banner-col-icon">🖨️</span>
+            <div>
+              <strong>Na impressora de casa:</strong>
+              <p>Caderno formatado em folha A4 com alto contraste e economia de tinta para colocar no mural ou geladeira.</p>
+            </div>
+          </div>
+          <div class="support-banner-col">
+            <span class="banner-col-icon">⚡</span>
+            <div>
+              <strong>Acesso imediato e vitalício:</strong>
+              <p>Faça o download dos arquivos em segundos após a confirmação e mantenha o material para sempre com você.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 6. CONTEÚDO DO KIT (Entregáveis Detalhados) -->
+    <!-- ========================================================= -->
+    <section class="section kit-content-section" id="kit">
+      <div class="container">
+
+        <header class="section-header">
+          <span class="section-kicker">Entrega detalhada</span>
+          <h2 class="section-title">O que vem no kit Emagreça sem Culpa — Comece pela Rotina</h2>
+          <p class="section-lead">
+            Todos os materiais foram estruturados para que você possa consultar no celular ou imprimir:
+          </p>
+        </header>
+
+        <div class="deliverables-grid">
+          
+          <div class="deliverable-item">
+            <div class="deliverable-icon">📖</div>
+            <div class="deliverable-details">
+              <span class="deliverable-tag">Fundamentos Práticos</span>
+              <h3>1. Guia educativo de 31 páginas</h3>
+              <p>Conceitos claros sobre rotina alimentar, organização de compras e refeições sem castigo e fundamentos de segurança e conservação.</p>
+            </div>
+          </div>
+
+          <div class="deliverable-item">
+            <div class="deliverable-icon">🗓️</div>
+            <div class="deliverable-details">
+              <span class="deliverable-tag">Passo a Passo</span>
+              <h3>2. Roteiro de atividades de 14 dias</h3>
+              <p>Passos graduais e realizáveis (Dias 01 a 14) organizados nas 4 etapas pedagógicas: Observe, Organize, Prepare e Continue.</p>
+            </div>
+          </div>
+
+          <div class="deliverable-item">
+            <div class="deliverable-icon">🍲</div>
+            <div class="deliverable-details">
+              <span class="deliverable-tag">Cozinha Cotidiana</span>
+              <h3>3. Seis receitas práticas completas</h3>
+              <p>
+                Frango com legumes na panela • Omelete de tomate e folhas • Salada de grão-de-bico • Arroz com cenoura e ervilhas • Aveia cremosa com banana • Lentilha com abóbora.
+              </p>
+            </div>
+          </div>
+
+          <div class="deliverable-item">
+            <div class="deliverable-icon">🖨️</div>
+            <div class="deliverable-details">
+              <span class="deliverable-tag">Formato A4</span>
+              <h3>4. Caderno de 5 ferramentas para impressão</h3>
+              <p>
+                Mapa da minha rotina • Planejador da semana • Lista de compras • Meu plano para dias corridos • Revisão e continuidade.
+              </p>
+            </div>
+          </div>
+
+          <div class="deliverable-item">
+            <div class="deliverable-icon">✍️</div>
+            <div class="deliverable-details">
+              <span class="deliverable-tag">Interatividade</span>
+              <h3>5. Campos preenchíveis em leitores de PDF</h3>
+              <p>Fichas interativas que você pode preencher e salvar diretamente pelo celular, tablet ou computador.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="disclaimer-callout">
+          <p>
+            <strong>Aviso técnico sobre preenchimento:</strong> O preenchimento e o salvamento dependem do leitor de PDF utilizado. Você também pode imprimir as fichas.
+          </p>
+          <p class="callout-sub">
+            *Os 14 dias representam a duração didática das atividades de organização do roteiro, sem promessa de emagrecimento nesse prazo. O produto não oferece dieta personalizada, consulta médica ou acompanhamento nutricional.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 7. BÔNUS INCLUÍDOS (Sem custo adicional) -->
+    <!-- ========================================================= -->
+    <section class="section bonus-section" id="bonus">
+      <div class="container">
+
+        <header class="section-header">
+          <span class="section-kicker">Ferramentas complementares</span>
+          <h2 class="section-title">Dois bônus práticos incluídos no kit</h2>
+          <p class="section-lead">
+            Estes materiais complementam o roteiro e já estão incluídos no valor total, sem nenhum acréscimo:
+          </p>
+        </header>
+
+        <div class="bonus-cards-grid">
+
+          <!-- Bônus 1 -->
+          <article class="bonus-full-card">
+            <div class="bonus-card-header">
+              <span class="bonus-included-badge">Incluído no kit</span>
+              <span class="bonus-number">BÔNUS 1</span>
+            </div>
+            <div class="bonus-card-content">
+              <div class="bonus-card-text-col">
+                <h3 class="bonus-card-title">Lista de Compras Semanal</h3>
+                <p class="bonus-spec">Documento digital em PDF • 11 páginas</p>
+                <p class="bonus-description">
+                  11 páginas com exemplo preenchido, planejamento por categorias, orçamento e listas reutilizáveis.
+                </p>
+                <ul class="bonus-features-list">
+                  <li>Antes de sair de casa: conferência de geladeira, freezer e despensa</li>
+                  <li>Lista preenchida com as receitas práticas e categorias de feira</li>
+                  <li>Controle de orçamento: itens essenciais, ajustáveis e o que pode esperar</li>
+                  <li>Fichas preenchíveis e orientações para a volta do mercado</li>
+                </ul>
+              </div>
+              <div class="bonus-card-media-col">
+                <img src="samples/capa-bonus-01.svg" alt="Capa real da Lista de Compras Semanal (11 páginas)" class="bonus-card-img" width="220" height="312" loading="lazy">
+              </div>
+            </div>
+          </article>
+
+          <!-- Bônus 2 -->
+          <article class="bonus-full-card">
+            <div class="bonus-card-header">
+              <span class="bonus-included-badge">Incluído no kit</span>
+              <span class="bonus-number">BÔNUS 2</span>
+            </div>
+            <div class="bonus-card-content">
+              <div class="bonus-card-text-col">
+                <h3 class="bonus-card-title">Guia de Substituições</h3>
+                <p class="bonus-spec">Documento digital em PDF • 12 páginas</p>
+                <p class="bonus-description">
+                  12 páginas com alternativas culinárias por ingrediente e situação, explicando o que muda no preparo.
+                </p>
+                <ul class="bonus-features-list">
+                  <li>As 4 perguntas para decidir trocas culinárias com segurança</li>
+                  <li>Bases para outras combinações (arroz, batata, mandioca, cuscuz, aveia)</li>
+                  <li>Feijão e leguminosas (lentilha, grão-de-bico e tempos de cozimento)</li>
+                  <li>Alternativas para legumes, carnes, ovos, leites e situações fora de casa</li>
+                </ul>
+                <div class="bonus-warning-pill">
+                  ℹ️ <strong>Nota:</strong> Trocas culinárias não representam equivalências nutricionais.
+                </div>
+              </div>
+              <div class="bonus-card-media-col">
+                <img src="samples/capa-bonus-02.svg" alt="Capa real do Guia de Substituições (12 páginas)" class="bonus-card-img" width="220" height="312" loading="lazy">
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 8. REFERÊNCIAS (Embasamento e Transparência) -->
+    <!-- ========================================================= -->
+    <section class="section references-section" id="referencias">
+      <div class="container">
+
+        <div class="references-card">
+          <span class="section-kicker">Fundamentação conceitual</span>
+          <h2 class="references-title">Uma base para você conferir.</h2>
+          <p class="references-lead">
+            Princípios gerais do Guia Alimentar para a População Brasileira, organizados em atividades e ferramentas de aplicação.
+          </p>
+
+          <div class="references-link-box">
+            <a href="https://www.gov.br/saude/pt-br/composicao/saps/promocao-da-saude/guias-alimentares"
+              target="_blank" rel="noopener noreferrer" class="gov-link">
+              <span>Acessar o Guia Alimentar para a População Brasileira (gov.br/saude)</span>
+              <span class="ext-icon" aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <!-- Grade Estruturada de Referências Reais -->
+          <div class="references-grid">
+            
+            <div class="ref-item-card">
+              <span class="ref-item-tag">Diretriz Oficial</span>
+              <h3 class="ref-item-title">[1] Ministério da Saúde (2014)</h3>
+              <p class="ref-item-desc">
+                <em>Guia Alimentar para a População Brasileira</em> (2ª edição). Base para escolhas de alimentos <em>in natura</em>, preparo culinário, planejamento doméstico e consumo compartilhado.
+              </p>
+            </div>
+
+            <div class="ref-item-card">
+              <span class="ref-item-tag">Evidência Científica</span>
+              <h3 class="ref-item-title">[2] Hall e colaboradores (2019)</h3>
+              <p class="ref-item-desc">
+                Ensaio randomizado e controlado sobre o impacto de alimentos ultraprocessados no consumo calórico (publicado na <em>Cell Metabolism</em>).
+              </p>
+            </div>
+
+            <div class="ref-item-card">
+              <span class="ref-item-tag">Segurança Alimentar</span>
+              <h3 class="ref-item-title">[3] Anvisa</h3>
+              <p class="ref-item-desc">
+                Orientações públicas e normas técnicas oficiais sobre boas práticas de higiene, rotulagem, preparo e conservação de alimentos.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Nota de Transparência e Isenção -->
+          <div class="ref-transparency-box">
+            <p>
+              <strong>Transparência e isenção:</strong> O documento oficial é gratuito. O valor deste kit está na organização editorial, nas atividades didáticas e nas ferramentas próprias de aplicação. Este produto é de autoria editorial independente e não possui vínculo, parceria, financiamento ou endosso institucional do Ministério da Saúde ou de órgãos públicos.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 9. OFERTA COMPLETA (Condição Promocional / Regular) -->
+    <!-- ========================================================= -->
+    <section class="section offer-section" id="oferta">
+      <div class="container">
+
+        <header class="section-header">
+          <span class="section-kicker">Acesso imediato</span>
+          <h2 class="section-title">Kit Digital Emagreça sem Culpa — Comece pela Rotina</h2>
+          <p class="section-lead">
+            Receba o kit educativo completo com todos os materiais e ferramentas de aplicação:
+          </p>
+        </header>
+
+        <div class="offer-container-box">
+
+          <!-- Checklist Geral dos Materiais -->
+          <div class="offer-summary-col">
+            <h3 class="offer-summary-heading">Tudo o que está incluído na sua compra:</h3>
+            <ul class="offer-items-list">
+              <li>
+                <span class="check-bullet" aria-hidden="true">✓</span>
+                <span><strong>Guia Educativo Digital</strong> (31 páginas com fundamentos práticos)</span>
+              </li>
+              <li>
+                <span class="check-bullet" aria-hidden="true">✓</span>
+                <span><strong>Roteiro de Atividades de 14 Dias</strong> com tarefas passo a passo</span>
+              </li>
+              <li>
+                <span class="check-bullet" aria-hidden="true">✓</span>
+                <span><strong>6 Receitas Cotidianas</strong> com ingredientes e modo de preparo</span>
+              </li>
+              <li>
+                <span class="check-bullet" aria-hidden="true">✓</span>
+                <span><strong>Caderno com 5 Ferramentas</strong> formatadas para impressão</span>
+              </li>
+              <li>
+                <span class="check-bullet" aria-hidden="true">✓</span>
+                <span><strong>Campos Preenchíveis</strong> em leitores de PDF compatíveis</span>
+              </li>
+              <li>
+                <span class="check-bullet" aria-hidden="true">✓</span>
+                <span><strong>Bônus 1:</strong> Lista de Compras Semanal (11 páginas)</span>
+              </li>
+              <li>
+                <span class="check-bullet" aria-hidden="true">✓</span>
+                <span><strong>Bônus 2:</strong> Guia de Substituições Culinárias (12 páginas)</span>
+              </li>
+            </ul>
+
+            <div class="offer-guarantee-mini">
+              <span class="mini-shield">🛡️</span>
+              <div>
+                <strong>Garantia de 7 dias:</strong> se o conteúdo não atender às suas expectativas, você pode solicitar reembolso dentro do prazo.
+              </div>
+            </div>
+          </div>
+
+          <!-- Card de Preço & Checkout -->
+          <div class="offer-pricing-col">
+            
+            <div class="pricing-card" id="pricingCard">
+              
+              <!-- Badge da Condição -->
+              <div class="pricing-badge-wrapper">
+                <span class="pricing-condition-badge js-promo-active-only">CONDIÇÃO PROMOCIONAL</span>
+                <span class="pricing-regular-badge js-promo-expired-only">PREÇO REGULAR</span>
+              </div>
+
+              <!-- Cronômetro (Visível apenas na promoção ativa) -->
+              <div class="countdown-widget js-countdown-wrapper" id="countdownWrapper">
+                <div class="countdown-header-text">
+                  <span class="clock-icon" aria-hidden="true">⏳</span>
+                  <span>Tempo restante da condição:</span>
+                </div>
+                <div class="countdown-display" aria-live="polite">
+                  <div class="countdown-unit">
+                    <span class="countdown-val" id="countdown-hours">01</span>
+                    <span class="countdown-label">horas</span>
+                  </div>
+                  <span class="countdown-sep">:</span>
+                  <div class="countdown-unit">
+                    <span class="countdown-val" id="countdown-minutes">30</span>
+                    <span class="countdown-label">min</span>
+                  </div>
+                  <span class="countdown-sep">:</span>
+                  <div class="countdown-unit">
+                    <span class="countdown-val" id="countdown-seconds">00</span>
+                    <span class="countdown-label">seg</span>
+                  </div>
+                </div>
+                <p class="countdown-subtext js-promo-active-only">
+                  Após o prazo, o kit passa a custar R$47.
+                </p>
+              </div>
+
+              <!-- Aviso de Expiração (Visível apenas quando encerrado) -->
+              <div class="expired-alert-widget js-promo-expired-only">
+                <p><strong>Período promocional encerrado.</strong> O kit está disponível pelo valor regular pós-lançamento de R$47.</p>
+              </div>
+
+              <!-- Exibição do Preço Vigente -->
+              <div class="price-presentation">
+                <span class="price-prefix">Por apenas</span>
+                <div class="price-value-row">
+                  <span class="price-curr">R$</span>
+                  <span class="price-number js-main-price-val">19</span>
+                  <span class="price-cents js-main-price-cents">,90</span>
+                </div>
+                <span class="price-terms">Pagamento único • Sem cobranças recorrentes</span>
+              </div>
+
+              <!-- Botão Principal de Compra -->
+              <a href="https://pay.hotmart.com/Y106402714O?checkoutMode=10"
+                class="btn-primary offer-cta-btn js-checkout-link" target="_blank" rel="noopener noreferrer">
+                <span class="js-offer-cta-text">QUERO GARANTIR MEU KIT</span>
+              </a>
+
+              <!-- Selos de Segurança -->
+              <div class="security-pills">
+                <span>🔒 Pagamento seguro via Hotmart</span>
+                <span>⚡ Acesso liberado no seu e-mail</span>
+                <span>🛡️ 7 dias de garantia</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 10. GARANTIA (7 Dias para Avaliar) -->
+    <!-- ========================================================= -->
+    <section class="section guarantee-section" id="garantia">
+      <div class="container">
+        
+        <div class="guarantee-box">
+          <div class="guarantee-badge-col">
+            <div class="guarantee-seal">
+              <span class="seal-number">7</span>
+              <span class="seal-days">DIAS</span>
+              <span class="seal-sub">GARANTIA</span>
+            </div>
+          </div>
+          <div class="guarantee-text-col">
+            <span class="section-kicker">Risco zero para você</span>
+            <h2 class="guarantee-title">7 dias para avaliar o material.</h2>
+            <p class="guarantee-body">
+              Se o conteúdo não atender às suas expectativas, solicite reembolso dentro do prazo de garantia diretamente na Hotmart. Seu acesso é seguro e você pode avaliar os arquivos com tranquilidade.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 11. COMO ACESSAR (3 Etapas de Entrega) -->
+    <!-- ========================================================= -->
+    <section class="section access-section" id="como-acessar">
+      <div class="container">
+
+        <header class="section-header">
+          <span class="section-kicker">Entrega rápida</span>
+          <h2 class="section-title">Como funciona o acesso ao seu kit</h2>
+          <p class="section-lead">
+            Veja como é simples começar a utilizar os materiais:
+          </p>
+        </header>
+
+        <div class="steps-grid-three">
+          
+          <div class="access-step-card">
+            <div class="access-step-num">1</div>
+            <div class="access-step-icon">💳</div>
+            <h3 class="access-step-title">Faça sua compra no checkout da Hotmart</h3>
+            <p class="access-step-text">
+              Ambiente 100% seguro com suporte a Pix, cartão de crédito ou boleto bancário.
+            </p>
+          </div>
+
+          <div class="access-step-card">
+            <div class="access-step-num">2</div>
+            <div class="access-step-icon">✉️</div>
+            <h3 class="access-step-title">Receba o acesso após a confirmação do pagamento</h3>
+            <p class="access-step-text">
+              Você recebe imediatamente no seu e-mail os dados e o link para download de todos os PDFs.
+            </p>
+          </div>
+
+          <div class="access-step-card">
+            <div class="access-step-num">3</div>
+            <div class="access-step-icon">📲</div>
+            <h3 class="access-step-title">Baixe os arquivos e use em leitor compatível ou imprima</h3>
+            <p class="access-step-text">
+              Guarde os arquivos no seu celular, computador ou tablet para consultar sempre que precisar.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 12. PERGUNTAS FREQUENTES (FAQ Acessível) -->
+    <!-- ========================================================= -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+
+        <header class="section-header">
+          <span class="section-kicker">Perguntas frequentes</span>
+          <h2 class="section-title">Dúvidas sobre o kit e o acesso</h2>
+          <p class="section-lead">
+            Clique nas perguntas para conferir todas as informações de forma transparente:
+          </p>
+        </header>
+
+        <div class="faq-accordion" role="region" aria-label="Acordeão de Perguntas Frequentes">
+
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button type="button" class="faq-btn js-faq-btn" aria-expanded="false" aria-controls="faq-ans-1" id="faq-q-1">
+              <span class="faq-btn-text">O que recebo na compra?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel js-faq-panel" id="faq-ans-1" role="region" aria-labelledby="faq-q-1">
+              <div class="faq-panel-inner">
+                <p>
+                  Você recebe o kit digital completo "Emagreça sem Culpa — Comece pela Rotina", composto pelo Guia Educativo de 31 páginas, o Roteiro de Atividades de 14 dias, 6 receitas práticas com ingredientes e preparo, o Caderno de Atividades para impressão, além de 2 bônus: a Lista de Compras Semanal (11 páginas) e o Guia de Substituições (12 páginas).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button type="button" class="faq-btn js-faq-btn" aria-expanded="false" aria-controls="faq-ans-2" id="faq-q-2">
+              <span class="faq-btn-text">Os bônus estão incluídos?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel js-faq-panel" id="faq-ans-2" role="region" aria-labelledby="faq-q-2">
+              <div class="faq-panel-inner">
+                <p>
+                  Sim. Os dois bônus (Lista de Compras Semanal de 11 páginas e Guia de Substituições de 12 páginas) já estão totalmente incluídos no valor total do produto, sem cobrança adicional ou taxas extras.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button type="button" class="faq-btn js-faq-btn" aria-expanded="false" aria-controls="faq-ans-3" id="faq-q-3">
+              <span class="faq-btn-text">Consigo usar pelo celular?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel js-faq-panel" id="faq-ans-3" role="region" aria-labelledby="faq-q-3">
+              <div class="faq-panel-inner">
+                <p>
+                  Sim. Todos os materiais são entregues em arquivos no formato PDF padrão, que podem ser lidos diretamente na tela de qualquer smartphone (Android ou iPhone), tablet ou computador. Fichas preenchíveis funcionam em aplicativos gratuitos como Adobe Acrobat Reader ou navegadores compatíveis.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button type="button" class="faq-btn js-faq-btn" aria-expanded="false" aria-controls="faq-ans-4" id="faq-q-4">
+              <span class="faq-btn-text">Posso imprimir?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel js-faq-panel" id="faq-ans-4" role="region" aria-labelledby="faq-q-4">
+              <div class="faq-panel-inner">
+                <p>
+                  Sim. O caderno de atividades e as listas de compras foram formatados com diagramação limpa em folhas A4, ideais para impressão doméstica ou gráfica rápida para quem prefere preenchimento físico à mão.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button type="button" class="faq-btn js-faq-btn" aria-expanded="false" aria-controls="faq-ans-5" id="faq-q-5">
+              <span class="faq-btn-text">É uma dieta personalizada?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel js-faq-panel" id="faq-ans-5" role="region" aria-labelledby="faq-q-5">
+              <div class="faq-panel-inner">
+                <p>
+                  Não. O material é um guia educativo de organização de hábitos, compras e planejamento alimentar para a rotina. Não oferecemos cardápios prescritivos individualizados, consultas ou acompanhamento nutricional e médico individual.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <button type="button" class="faq-btn js-faq-btn" aria-expanded="false" aria-controls="faq-ans-6" id="faq-q-6">
+              <span class="faq-btn-text">Vou emagrecer em 14 dias?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel js-faq-panel" id="faq-ans-6" role="region" aria-labelledby="faq-q-6">
+              <div class="faq-panel-inner">
+                <p>
+                  Não fazemos promessa de perda de peso em prazos específicos. Os 14 dias representam a duração didática das atividades propostas para você organizar suas refeições e construir autonomia na cozinha. Resultados individuais de saúde e composição corporal variam de pessoa para pessoa e dependem de hábitos consistentes a longo prazo.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="faq-item">
+            <button type="button" class="faq-btn js-faq-btn" aria-expanded="false" aria-controls="faq-ans-7" id="faq-q-7">
+              <span class="faq-btn-text">Quando recebo o acesso?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel js-faq-panel" id="faq-ans-7" role="region" aria-labelledby="faq-q-7">
+              <div class="faq-panel-inner">
+                <p>
+                  O envio é automático após a confirmação do pagamento. Pagamentos realizados via Pix ou cartão de crédito costumam ser aprovados em poucos minutos. Pagamentos por boleto bancário podem levar de 1 a 3 dias úteis para compensação bancária.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="faq-item">
+            <button type="button" class="faq-btn js-faq-btn" aria-expanded="false" aria-controls="faq-ans-8" id="faq-q-8">
+              <span class="faq-btn-text">Como funciona a garantia?</span>
+              <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-panel js-faq-panel" id="faq-ans-8" role="region" aria-labelledby="faq-q-8">
+              <div class="faq-panel-inner">
+                <p>
+                  Você tem 7 dias corridos a partir da compra para avaliar todo o material. Se você achar que o kit não atendeu às suas expectativas, basta solicitar o reembolso diretamente pelo suporte da Hotmart dentro do prazo de 7 dias para receber de volta o valor pago.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 13. FECHAMENTO & RODAPÉ -->
+    <!-- ========================================================= -->
+    <section class="section closing-section" id="fechamento">
+      <div class="container">
+        
+        <div class="closing-card">
+          <h2 class="closing-title">Uma pequena ação hoje. Um caminho para continuar.</h2>
+          <p class="closing-description">
+            Guia, atividades e dois bônus em um só kit digital.
+          </p>
+          <a href="https://pay.hotmart.com/Y106402714O?checkoutMode=10"
+            class="btn-primary closing-btn js-checkout-link" target="_blank" rel="noopener noreferrer">
+            <span class="js-closing-cta">QUERO MEU KIT POR R$19,90</span>
+          </a>
+          <p class="closing-note">
+            Acesso imediato via Hotmart • Garantia incondicional de 7 dias
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé Institucional e Aviso Legal Obrigatório -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-legal-notice">
+        <p><strong>Aviso importante:</strong> Conteúdo educativo geral. Não substitui acompanhamento médico ou nutricional. Sem garantia de perda de peso.</p>
       </div>
 
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          <span>É uma dieta restritiva?</span>
-          <span class="faq-toggle-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-content">
-            <p>Não. A proposta do método não é passar fome, contar calorias o tempo todo ou cortar grupos alimentares de
-              forma radical. A ideia é ajudar você a organizar melhor sua alimentação com mais leveza.</p>
-          </div>
+      <div class="footer-bottom-row">
+        <p class="footer-copy">
+          © 2026 Emagreça sem Culpa — Comece pela Rotina. Todos os direitos reservados.
+        </p>
+        <div class="footer-nav">
+          <a href="#kit">O kit</a>
+          <a href="#por-dentro">Por dentro</a>
+          <a href="#bonus">Bônus</a>
+          <a href="#faq">Dúvidas</a>
+          <a href="#referencias">Referências</a>
         </div>
       </div>
 
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          <span>Quando recebo o método após a compra?</span>
-          <span class="faq-toggle-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-content">
-            <p>Imediatamente. O acesso é liberado na hora, direto no seu e-mail.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          <span>E se eu não gostar?</span>
-          <span class="faq-toggle-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-content">
-            <p>Você tem 7 dias de garantia. Caso o conteúdo não faça sentido para você, pode solicitar o reembolso
-              dentro desse prazo.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">
-          <span>Funciona para mulheres acima de 40 anos?</span>
-          <span class="faq-toggle-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-content">
-            <p>Sim! As orientações levam em conta as particularidades do corpo feminino em todas as fases da vida,
-              incluindo pré-menopausa e menopausa.</p>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-
-  <!-- FOOTER CTA -->
-  <footer class="footer scroll-reveal">
-    <h2>Comece hoje de um jeito mais leve</h2>
-    <p>Você não precisa fazer dieta radical para dar o primeiro passo. Acesse o método e veja como começar com mais
-      clareza, leveza e sem culpa.</p>
-    <a href="https://pay.hotmart.com/Y106402714O?checkoutMode=10"
-      class="btn-main" target="_blank" rel="noopener noreferrer">QUERO ACESSAR O MÉTODO</a>
-    <p class="secure-note">
-      🔒 Pagamento seguro &nbsp;•&nbsp; ⚡ Acesso imediato após a compra &nbsp;•&nbsp; 🛡️ Garantia de 7 dias
-      &nbsp;•&nbsp; 📦 Produto 100% digital
-    </p>
-    <p class="footer-note">© 2025 Emagrecimento sem Culpa. Todos os direitos reservados.<br>Este produto não substitui acompanhamento médico ou
-      nutricional.</p>
   </footer>
 
-  <div class="mobile-sticky-btn" id="mobileStickyBtn">
-    <a href="https://pay.hotmart.com/Y106402714O?checkoutMode=10"
-      class="btn-mobile-sticky" target="_blank" rel="noopener noreferrer">QUERO MEU MÉTODO POR R$19,90</a>
+  <!-- ========================================================= -->
+  <!-- MODAL LIGHTBOX ACESSÍVEL PARA AMPLIAÇÃO DAS AMOSTRAS -->
+  <!-- ========================================================= -->
+  <div class="sample-modal-backdrop" id="sampleModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="sample-modal-content">
+      <header class="sample-modal-header">
+        <h3 id="modalTitle" class="sample-modal-title">Amostra do Material</h3>
+        <button type="button" class="btn-close-modal" id="modalCloseBtn" aria-label="Fechar ampliação">
+          &times;
+        </button>
+      </header>
+      <div class="sample-modal-body">
+        <div class="sample-modal-frame" id="modalFrame">
+          <img src="" alt="" id="modalImg" class="sample-modal-img">
+        </div>
+      </div>
+      <footer class="sample-modal-footer">
+        <span class="modal-caption-text" id="modalCaption">*Exemplo de uso didático. Preenchimento depende do leitor de PDF.</span>
+        <button type="button" class="btn-secondary js-close-modal-footer">Fechar</button>
+      </footer>
+    </div>
   </div>
 
+  <!-- Scripts do Projeto -->
   <script src="script.js"></script>
 </body>
 

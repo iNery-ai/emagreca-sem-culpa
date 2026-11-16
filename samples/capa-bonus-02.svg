@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 850" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&amp;family=DM+Sans:wght@400;500;700&amp;display=swap');
+      .serif-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; }
+      .sans-text { font-family: 'DM Sans', sans-serif; }
+    </style>
+  </defs>
+  <!-- Background Page -->
+  <rect width="600" height="850" fill="#FFF8F5" rx="14"/>
+  <rect x="20" y="20" width="560" height="810" fill="#FFFFFF" rx="10" stroke="#FDE8EC" stroke-width="1.5"/>
+  
+  <!-- Top Category Pill -->
+  <rect x="50" y="55" width="360" height="34" fill="#FDE8EC" rx="17"/>
+  <text x="70" y="77" class="sans-text" font-size="11" font-weight="700" letter-spacing="1.5" fill="#E8526A">BÔNUS 02 · KIT COMECE PELA ROTINA</text>
+  
+  <!-- Central Medallion -->
+  <circle cx="300" cy="290" r="130" fill="#FDE8EC" opacity="0.6"/>
+  
+  <!-- Two Opposite Exchange Arrows Icon -->
+  <g transform="translate(300, 290)">
+    <!-- Top Arrow: Right -->
+    <line x1="-70" y1="-25" x2="50" y2="-25" stroke="#E8526A" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 32 -45 L 60 -25 L 32 -5" fill="none" stroke="#E8526A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Bottom Arrow: Left -->
+    <line x1="70" y1="25" x2="-50" y2="25" stroke="#E8526A" stroke-width="6" stroke-linecap="round"/>
+    <path d="M -32 5 L -60 25 L -32 45" fill="none" stroke="#E8526A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="300" y="505" class="serif-title" font-size="40" fill="#3D1A1E" text-anchor="middle">Guia de Substituições</text>
+  
+  <!-- Subtitle -->
+  <text x="300" y="550" class="sans-text" font-size="16" fill="#6B3A40" text-anchor="middle">Alternativas culinárias para o que falta,</text>
+  <text x="300" y="574" class="sans-text" font-size="16" fill="#6B3A40" text-anchor="middle">pesa no bolso ou não agrada.</text>
+  
+  <!-- Categories -->
+  <text x="300" y="625" class="sans-text" font-size="13" font-weight="500" fill="#8A7070" text-anchor="middle">Bases · leguminosas · vegetais</text>
+  <text x="300" y="648" class="sans-text" font-size="13" font-weight="500" fill="#8A7070" text-anchor="middle">preparações com ovos e carnes · situações do dia a dia</text>
+  
+  <!-- Button -->
+  <g transform="translate(200, 680)">
+    <rect width="200" height="48" fill="#E8526A" rx="24"/>
+    <text x="100" y="30" class="sans-text" font-size="12" font-weight="700" letter-spacing="1" fill="#FFFFFF" text-anchor="middle">ABRIR O BÔNUS →</text>
+  </g>
+  
+  <!-- Footer Brand -->
+  <text x="50" y="795" class="sans-text" font-size="11" font-weight="700" letter-spacing="1.5" fill="#8A7070">EMAGRECIMENTO SEM CULPA</text>
+</svg>
